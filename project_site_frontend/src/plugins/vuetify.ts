@@ -13,7 +13,7 @@ const opts = {
       light: {
         primary: colors.green.lighten4,
         secondary: colors.purple.lighten2,
-        accent: colors.lightGreen.accent1,
+        accent: colors.green.darken3,
       },
     },
   },

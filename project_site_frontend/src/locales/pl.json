@@ -1,4 +1,8 @@
 {
+  "hello": "Pozdrowienia z Warszawy!",
+  "appTitle": "Adam Kochański",
   "contactPageTitle": "Kontakt",
-  "projectsPageTitle": "Projekty"
+  "projectsPageTitle": "Projekty",
+  "iconMadeBy": "Ikony zrobione przez ",
+  "from": " z "
 }

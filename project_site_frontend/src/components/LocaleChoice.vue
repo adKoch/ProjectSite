@@ -19,13 +19,13 @@
   export default Vue.extend({
     name: 'LocaleChoice',
     data: () => ({
-        availableLanguages: ['en', 'pl'],
+      availableLanguages: ['en', 'pl'],
     }),
-    methods:{
-      setLocale(locale:string){
-        this.$i18n.locale=locale;
+    methods: {
+      setLocale(locale: string) {
+        this.$i18n.locale = locale;
       },
-      getCurrentLocale():string {
+      getCurrentLocale(): string {
         return this.$i18n.locale;
       },
     },

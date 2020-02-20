@@ -1,4 +1,8 @@
 {
+  "hello": "Hello from Warsaw!",
+  "appTitle": "Adam Kochański",
   "contactPageTitle": "Contact",
-  "projectsPageTitle": "Projects"
+  "projectsPageTitle": "Projects",
+  "iconMadeBy": "Icons made by ",
+  "from": " from "
 }

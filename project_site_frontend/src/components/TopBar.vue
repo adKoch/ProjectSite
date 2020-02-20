@@ -1,7 +1,7 @@
 <template>
     <v-app-bar app fixed color="primary">
         <v-toolbar-title>
-            {{appTitle}}
+            {{$t('appTitle')}}
         </v-toolbar-title>
         <LocaleChoice/>
         <v-spacer/>
@@ -21,7 +21,6 @@
     name: 'TopBar',
 
     data: () => ({
-      appTitle: 'Adam Kochański',
     }),
     components: {
       LocaleChoice,
