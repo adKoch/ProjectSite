@@ -1,8 +1,19 @@
 {
   "hello": "Pozdrowienia z Warszawy!",
   "appTitle": "Adam Kochański",
+  "send": "Wyślij",
+  "contactHeader": "Nawiąż kontakt",
+  "contactSubheader": "Wyślij wiadomość poprzez wypełnienie poniższych pól",
+  "contactTopicLabel": "Temat",
+  "contactTopicPlaceholder": "Wpisz temat wiadomości",
+  "contactTextAreaLabel": "Treść",
+  "contactTextAreaPlaceholder": "Wpisz tutaj treść wiadomości",
+  "homePageTitle": "Strona główna",
   "contactPageTitle": "Kontakt",
   "projectsPageTitle": "Projekty",
-  "iconMadeBy": "Ikony zrobione przez ",
-  "from": " z "
+  "iconMadeBy": "Ikony autorstwa ",
+  "from": " z ",
+  "busflowTitle": "Bus Flow",
+  "watTableTitle": "Wat Table",
+  "watTableDescription": "Wat Table opis"
 }

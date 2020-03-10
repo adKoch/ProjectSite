@@ -5,12 +5,25 @@
         </v-toolbar-title>
         <LocaleChoice/>
         <v-spacer/>
-        <v-btn text @click="$router.push('Contact')">
-            {{$t('contactPageTitle')}}
-        </v-btn>
-        <v-btn text @click="$router.push('Projects')">
-            {{$t('projectsPageTitle')}}
-        </v-btn>
+        <router-link to="home">
+            <v-btn text>
+                {{$t('homePageTitle')}}
+            </v-btn>
+        </router-link>
+        <router-link to="contact">
+            <v-btn text>
+                {{$t('contactPageTitle')}}
+            </v-btn>
+        </router-link>
+        <router-link to="projects">
+            <v-btn text>
+                {{$t('projectsPageTitle')}}
+            </v-btn>
+        </router-link>
+        <v-switch color="accent"
+                  v-model="$vuetify.theme.dark"
+                  append-icon="mdi-brightness-4"
+                  prepend-icon="mdi-brightness-6"/>
     </v-app-bar>
 </template>
 <script lang="ts">
@@ -20,8 +33,7 @@
   export default Vue.extend({
     name: 'TopBar',
 
-    data: () => ({
-    }),
+    data: () => ({}),
     components: {
       LocaleChoice,
     },

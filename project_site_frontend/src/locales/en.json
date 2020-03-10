@@ -1,8 +1,19 @@
 {
   "hello": "Hello from Warsaw!",
   "appTitle": "Adam Kochański",
+  "send": "Send",
+  "contactHeader": "Get In Touch",
+  "contactSubheader": "Send a message by filling forms below",
+  "contactTopicLabel":  "Subject",
+  "contactTopicPlaceholder": "Type in subject of your message",
+  "contactTextAreaLabel" : "Message",
+  "contactTextAreaPlaceholder" : "Type in your message content here",
+  "homePageTitle": "Home",
   "contactPageTitle": "Contact",
   "projectsPageTitle": "Projects",
   "iconMadeBy": "Icons made by ",
-  "from": " from "
+  "from": " from ",
+  "busflowTitle": "Bus Flow",
+  "watTableTitle": "Wat Table",
+  "watTableDescription": "Wat Table description"
 }

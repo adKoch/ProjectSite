@@ -1,16 +1,16 @@
 <template>
-  <div class="home">
-    <TopBar/>
-  </div>
+    <v-row align="center" justify="center">
+        <about-me class="ma-5"/>
+    </v-row>
 </template>
 
 <script lang="ts">
-import TopBar from '@/components/TopBar.vue';
+  import AboutMe from '@/views/content/AboutMe.vue';
 
-export default {
-  name: 'Home',
-  components: {
-    TopBar,
-  },
-};
+  export default {
+    name: 'Home',
+    components: {
+      AboutMe,
+    },
+  };
 </script>

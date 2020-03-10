@@ -8,14 +8,12 @@
         </v-btn>
         <v-btn icon rounded color="secondary" class="ma-1">
             <a :href="links.linkedin">
-                <v-img src='../assets/linkedin.svg' aspect-ratio="1" width="30" class="ma-2">
-                </v-img>
+                <v-img src='../assets/linkedin.svg' aspect-ratio="1" width="30" class="ma-2"></v-img>
             </a>
         </v-btn>
         <v-btn icon rounded color="secondary" class="ma-1">
             <a :href="links.facebook">
-                <v-img src='../assets/facebook.svg' aspect-ratio="1" width="30" class="ma-2">
-                </v-img>
+                <v-img src='../assets/facebook.svg' aspect-ratio="1" width="30" class="ma-2"></v-img>
             </a>
         </v-btn>
     </div>
