@@ -39,6 +39,18 @@
     },
   });
 </script>
-<style scoped>
 
-</style>
+<i18n>
+    {
+    "en": {
+    "homePageTitle": "Home",
+    "contactPageTitle": "Contact",
+    "projectsPageTitle": "Projects"
+    },
+    "pl": {
+    "homePageTitle": "Strona główna",
+    "contactPageTitle": "Kontakt",
+    "projectsPageTitle": "Projekty"
+    }
+    }
+</i18n>

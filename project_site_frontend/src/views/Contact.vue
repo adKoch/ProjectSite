@@ -1,8 +1,8 @@
 <template>
     <div>
         <v-container class="text-center">
-            <h1>{{$t('contactHeader')}}</h1>
-            <h3>{{$t('contactSubheader')}}</h3>
+            <h1>{{$t('pageHeader')}}</h1>
+            <h3>{{$t('pageSubheader')}}</h3>
             <v-text-field rounded filled clearable outlined solo
                           class="ma-5"
                           :label="$t('contactTopicLabel')"
@@ -17,7 +17,7 @@
             </v-textarea>
             <v-btn rounded outlined
                    class="ma-5">
-                {{$t('send')}}
+                {{$t('sendButtonLabel')}}
             </v-btn>
         </v-container>
     </div>
@@ -30,3 +30,26 @@
     components: {},
   };
 </script>
+
+<i18n>
+    {
+    "en": {
+    "pageHeader": "Get In Touch",
+    "pageSubheader": "Send a message by filling forms below",
+    "contactTopicLabel":  "Subject",
+    "contactTopicPlaceholder": "Type in subject of your message",
+    "contactTextAreaLabel" : "Message",
+    "contactTextAreaPlaceholder" : "Type in your message content here",
+    "sendButtonLabel": "Send"
+    },
+    "pl": {
+    "pageHeader": "Nawiąż kontakt",
+    "pageSubheader": "Wyślij wiadomość poprzez wypełnienie poniższych pól",
+    "contactTopicLabel": "Temat",
+    "contactTopicPlaceholder": "Wpisz temat wiadomości",
+    "contactTextAreaLabel": "Treść",
+    "contactTextAreaPlaceholder": "Wpisz tutaj treść wiadomości",
+    "sendButtonLabel": "Wyślij"
+    }
+    }
+</i18n>

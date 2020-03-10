@@ -3,7 +3,7 @@
         <v-expansion-panel>
             <v-expansion-panel-header>
                 <h2 class="text-center">
-                    {{$t('busflowTitle')}}
+                    BusFlow
                 </h2>
             </v-expansion-panel-header>
             <v-expansion-panel-content>
