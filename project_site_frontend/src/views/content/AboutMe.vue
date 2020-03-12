@@ -8,7 +8,7 @@
         </v-card-text>
         <v-card-text>
             <v-row align="center" justify="center">
-                <v-img src="../../assets/rety_kotlety_2.jpg" max-width="400"/>
+                <v-img src="../../assets/profilowe.jpg" max-width="400"/>
             </v-row>
         </v-card-text>
         <v-card-text>

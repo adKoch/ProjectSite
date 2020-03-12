@@ -45,12 +45,14 @@
     "en": {
     "homePageTitle": "Home",
     "contactPageTitle": "Contact",
-    "projectsPageTitle": "Projects"
+    "projectsPageTitle": "Projects",
+    "appTitle": "Adam Kochański"
     },
     "pl": {
     "homePageTitle": "Strona główna",
     "contactPageTitle": "Kontakt",
-    "projectsPageTitle": "Projekty"
+    "projectsPageTitle": "Projekty",
+    "appTitle": "Adam Kochański"
     }
     }
 </i18n>
