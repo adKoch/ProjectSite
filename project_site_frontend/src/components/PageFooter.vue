@@ -24,7 +24,7 @@
                     Pixabay</a>
                 </v-card-text>
                 <v-card-text>
-                    {{ new Date().getFullYear() }} — <strong>{{$t('appTitle')}}</strong>
+                    {{ new Date().getFullYear() }} — <strong>Adam Kochański</strong>
                 </v-card-text>
             </v-card>
         </v-container>

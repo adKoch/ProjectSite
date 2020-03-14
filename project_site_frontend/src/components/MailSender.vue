@@ -1,14 +1,17 @@
 <template>
     <div>
         <v-row align="center" justify="center">
-            <vue-recaptcha sitekey="6LebfuAUAAAAAJI5unWoZ4IZnvMP9bqi5cSyS6Iw" class="justify-center"/>
+            <v-checkbox v-model="gdprAgreement" :label="$t('gdprAgreement')"/>
+        </v-row>
+        <v-row align="center" justify="center">
+            <vue-recaptcha @verify="(response) => recaptchaResponse=response" sitekey="6LebfuAUAAAAAJI5unWoZ4IZnvMP9bqi5cSyS6Iw" class="justify-center"/>
         </v-row>
         <v-btn rounded
                class="ma-5"
-               :disabled="title==='' || content==='' || sign===''"
-               @click="sendMail(title, content, sign,
-               () => {successSnackbarVisibility = true},
-               () => {errorSnackbarVisibility = true})">
+               :disabled="title==='' || content==='' || sign==='' || recaptchaResponse==='' || !gdprAgreement"
+               @click="sendMail(title, content, sign, recaptchaResponse,
+               () => successSnackbarVisibility = true,
+               () => errorSnackbarVisibility = true)">
             {{$t('sendButtonLabel')}}
         </v-btn>
         <v-snackbar v-model="successSnackbarVisibility">
@@ -44,6 +47,8 @@ export default {
   data: () => ({
     successSnackbarVisibility: false,
     errorSnackbarVisibility: false,
+    recaptchaResponse: '',
+    gdprAgreement: false,
   }),
   methods: {
     sendMail,
@@ -60,13 +65,15 @@ export default {
     "sendButtonLabel":"Send",
     "successfullySent":"Successfully sent!",
     "errorOnSent":"Error sending your message. Try again later...",
-    "closeSnackbar":"Close"
+    "closeSnackbar":"Close",
+    "gdprAgreement":"I consent to having this website store my submitted information so they can respond to my inquiry."
     },
     "pl": {
     "sendButtonLabel":"Wyślij",
     "successfullySent":"Pomyślnie wysłano!",
     "errorOnSent":"Wystąpił problem podczas wysyłania twojej wiadomości. Spróbuj ponownie później...",
-    "closeSnackbar":"Zamknij"
+    "closeSnackbar":"Zamknij",
+    "gdprAgreement":"Wyrażam zgodę na przechowywanie przez stronę internetową zapisanych w powyższym formularzu informacji w celu odpowiedzi na wysłaną wiadomość."
     }
     }
 </i18n>

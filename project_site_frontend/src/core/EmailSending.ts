@@ -11,12 +11,14 @@ export function initMail() {
 export function sendMail(title: string,
                          content: string,
                          sign: string,
+                         captchaResponse: string,
                          onSuccess: (status: number, text: string) => any,
                          onError: (error: any) => any) {
   const templateParams = {
-    message_title: title,
-    message_content: content,
-    message_sign: sign,
+    'message_title': title,
+    'message_content': content,
+    'message_sign': sign,
+    'g-recaptcha-response': captchaResponse,
   };
   return emailjs.send(serviceId, templateId, templateParams)
     .then((result) => onSuccess(result.status, result.text), (error) => onError(error));
