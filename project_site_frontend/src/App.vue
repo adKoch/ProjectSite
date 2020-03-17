@@ -25,8 +25,6 @@
       TopBar,
       PageFooter,
     },
-
-    data: () => ({}),
   });
 </script>
 
