@@ -1,10 +1,16 @@
 <template>
-    <v-app-bar app fixed color="primary">
+    <v-app-bar app fixed color="primary" class="ma-0">
         <v-toolbar-title>
             {{$t('appTitle')}}
         </v-toolbar-title>
         <LocaleChoice/>
         <v-spacer/>
+        <v-switch color="accent"
+                  class="pa-2"
+                  flat
+                  v-model="$vuetify.theme.dark"
+                  append-icon="mdi-brightness-4"
+                  prepend-icon="mdi-brightness-6"/>
         <router-link to="home">
             <v-btn text>
                 {{$t('homePageTitle')}}
@@ -20,10 +26,6 @@
                 {{$t('projectsPageTitle')}}
             </v-btn>
         </router-link>
-        <v-switch color="accent"
-                  v-model="$vuetify.theme.dark"
-                  append-icon="mdi-brightness-4"
-                  prepend-icon="mdi-brightness-6"/>
     </v-app-bar>
 </template>
 <script lang="ts">
