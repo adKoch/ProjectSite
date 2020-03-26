@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2
+
+* Fix captcha
+* Add gdpr agreement to contact forms
+* Fix some typos
+
 ## 1.1
 
 * Fix any deployment bugs
