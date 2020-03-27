@@ -1,6 +1,13 @@
 <template>
     <v-card max-width="1000">
         <v-card-text>
+            <v-row align="center" justify="center">
+                <h1 class="heading">
+                    Adam <strong>Kochański</strong>
+                </h1>
+            </v-row>
+        </v-card-text>
+        <v-card-text>
             {{$t('hi')}}
         </v-card-text>
         <v-card-text>
@@ -8,7 +15,7 @@
         </v-card-text>
         <v-card-text>
             <v-row align="center" justify="center">
-                <v-img src="../../assets/profilowe.jpg" max-width="400"/>
+                <v-img src="../../assets/profilowe.jpg" max-width="400" class="profile-image"/>
             </v-row>
         </v-card-text>
         <v-card-text>
@@ -79,12 +86,18 @@
   };
 </script>
 
+<style scoped>
+    .profile-image{
+        border-radius: 50%;
+    }
+</style>
+
 <i18n>
     {
     "en": {
     "hi":"Hi,",
     "intro":"my name is Adam and I'm a recent computer science engineering degree graduate with IT systems specialty. It's been a couple of years since I discovered my passion for learning new technologies and programming languages. With each project I realise how much more I want to learn. ",
-    "introTechnologies":"In my projects I mainly use Java-like languages: Java, Flutter, C# and Kotlin (I'm a fan). Recently I took interest in creating web applications in Vue.js framework, in which I wrote an app that I described as my diploma work an an app which serves as a website on which you can read this description.",
+    "introTechnologies":"In my projects I mainly use Java-like languages: Java, Flutter, C# and Kotlin (I'm a fan). Recently I took interest in creating web applications in Vue.js framework, in which I wrote an app that I described as my diploma work and an app which serves as a website on which you can read this description.",
     "currentTechTableIntro":"My preferable technology stack:",
     "futureTechTableIntro":"Technologies which I plan on learning:",
     "pastTechTableIntro":"History:"
@@ -92,7 +105,7 @@
     "pl": {
     "hi":"Cześć,",
     "intro":"na imię mam Adam i jestem świeżym absolwentem studiów inżynierskich informatyki ze specjalizacją w systemach informatycznych. Już od paru lat moją pasją jest poznawanie nowych technologii i języków programowania. Z każdym kolejnym projektem zdaję sobie sprawę, ile jeszcze rzeczy chciałbym poznać - języków programowania, bibliotek i metodyk.",
-    "introTechnologies":"Głównie piszę w językach Javopodobnych - Java, Flutter, C# oraz Kotlin, którego jestem fanem. Ostatnio zainteresowany jestem tworzeniem aplikacji internetowych we frameworku Vue.js, w którym to została napisana aplikacja opisywana w mojej pracy inżynierskiej oraz także strona, na której zamieszczony jest ten opis. ",
+    "introTechnologies":"Głównie piszę w językach Javopodobnych - Java, Flutter, C# oraz Kotlin, którego jestem fanem. Ostatnio zainteresowany jestem tworzeniem aplikacji internetowych we frameworku Vue.js, w którym to została napisana aplikacja opisywana w mojej pracy inżynierskiej oraz strona, na której zamieszczony jest ten opis. ",
     "currentTechTableIntro":"Lista używanych technologii:",
     "futureTechTableIntro":"Lista technologii, z którymi mam plan się zapoznać:",
     "pastTechTableIntro":"Historia:"
